@@ -101,7 +101,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 6rem 1rem 2rem 1rem; /* Adicionado recuo para não sumir sob o menu fixo */
+    padding: 6rem 1rem 2rem 1rem; 
 
 
 }
@@ -120,13 +120,13 @@ h1 {
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
-    text-align: center; /* Centraliza melhor em telas médias */
+    text-align: center; 
 }
 
 .cabecalho-sub-titulo {
     font-size: 3rem;
     color: var(--claro);
-    text-align: center; /* Centraliza melhor em telas médias */
+    text-align: center; 
 
 }
 
@@ -139,7 +139,7 @@ h1 {
     color: var(--claro);
     text-align: center;
     margin-bottom: 20px;
-    /* Correção: Espaço removido entre o 20 e o px */
+    
 }
 
 .sobre-caixa {
@@ -147,32 +147,32 @@ h1 {
     max-width: 960px;
     margin: 0 auto;
     border-radius: 16px;
-    border: 1px solid rgba(124, 58, 237, 0.3); /* Borda roxa sutil */
+    border: 1px solid rgba(124, 58, 237, 0.3); 
     backdrop-filter: blur(10px);
-    background: rgba(10, 15, 28, 0.7); /* Fundo escuro para destacar o brilho */
+    background: rgba(10, 15, 28, 0.7); 
     
-    /* Aplica a animação de brilho interno e externo */
-    animation: brilho-expansivo 4s ease-in-out infinite; 
+    
+    animation: brilho-expansivo 6s ease-in-out infinite; 
 }
 
-/* Animação que faz o brilho pulsar de dentro para fora */
+
 @keyframes brilho-expansivo {
     0% {
-        /* Brilho interno concentrado nas bordas e sombra externa leve */
+        
         box-shadow: 
-            inset 0 0 15px rgba(124, 58, 237, 0.2), 
+            inset 0 0 2px rgba(124, 58, 237, 0.2), 
             0 0 10px rgba(124, 58, 237, 0.1);
     }
     50% {
-        /* O brilho se expande para o centro (de dentro) e cresce para fora */
+        
         box-shadow: 
-            inset 0 0 40px rgba(124, 58, 237, 0.6), 
+            inset 0 0 17px rgba(124, 58, 237, 0.6), 
             0 0 25px rgba(124, 58, 237, 0.4);
     }
     100% {
-        /* Retorna ao estado inicial suavemente */
+        
         box-shadow: 
-            inset 0 0 15px rgba(124, 58, 237, 0.2), 
+            inset 0 0 2px rgba(124, 58, 237, 0.2), 
             0 0 10px rgba(124, 58, 237, 0.1);
     }
 }
@@ -182,17 +182,17 @@ h1 {
     text-align: center;
     font-size: 1.08rem;
     line-height: 1.6;
-    /* Dá um respiro excelente entre as linhas */
+    
 }
 
-/* Centraliza o bloco do botão */
+
 .github-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Estilização moderna estilo Glassmorphism/Dark */
+
 .btn-github-sobre {
     display: inline-flex;
     align-items: center;
@@ -208,7 +208,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
+
 .btn-github-sobre:hover {
     background: #fff;
     color: #090a10;
@@ -217,13 +217,13 @@ h1 {
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
-/* Controla o caractere de seta puro */
+
 .seta-animada {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-/* Faz a seta apontar empurrando para a direita de forma sutil no hover */
+
 .btn-github-sobre:hover .seta-animada {
     transform: translateX(4px);
 }
@@ -346,13 +346,13 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5s ease; /* Correção: Adicionado o 's' que faltava em 0.5s */
+    transition: all 0.5s ease; 
 
 }
 
 .botao-form:hover {
     transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4); /* Correção: Espaço removido entre 15 e px */
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4); 
 }
 
 .email {
@@ -375,21 +375,21 @@ footer a {
     display: inline-block;
     font-weight: bold;
     background: transparent !important;
-    text-shadow: 0 0 10px rgba(124, 58, 237, 0.8), 0 0 15px rgba(124, 58, 237, 0.5); /* Correção: Adicionada a vírgula para separar as sombras */
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.8), 0 0 15px rgba(124, 58, 237, 0.5); 
     transition: 0.5s;
 
 }
 
 footer a:hover {
     color: #a78bfa;
-    text-shadow: 0 0 1.5px #fff, 0 45px 2px #a78bfa; /* Correção: Adicionada a vírgula e o px */
+    text-shadow: 0 0 1.5px #fff, 0 45px 2px #a78bfa; 
 
     transform: translateY(-10px)scale(1.03);
 }
 
 .copyright {
     display: flex;
-    font-size: 0.9rem; /* Correção: Adicionado a unidade rem */
+    font-size: 0.9rem; 
     opacity: 0.7;
     justify-content: center;
 }
