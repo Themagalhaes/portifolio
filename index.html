@@ -1,165 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
     <title>Portfólio - Daniel Magalhães</title>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <canvas id="matrix-canvas"></canvas>
     <!-- NAVEGAÇÃO -->
     <nav class="navegacao">
-        <div class="container">
-            <ul class="menu">
-                <li><a href="#inicio" class="menu-link">Início</a></li>
-                <li><a href="#sobre" class="menu-link">Sobre</a></li>
-                <li><a href="#projetos" class="menu-link">Projetos</a></li>
-                <li><a href="#contatos" class="menu-link">Contato</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="menu">
+          <li><a href="#inicio" class="menu-link">Início</a></li>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-        <!-- SEÇÃO INÍCIO -->
-        <section id="inicio" class="cabecalho">
-            <img src="images/eu.jpeg" alt="Foto de Daniel Magalhaes" class="foto-perfil">
-            <h1>Daniel Magalhães</h1>
-            <p>Estudante de Desenvolvimento Web</p>
-        </section>
+      <!-- SEÇÃO INÍCIO -->
+      <section id="inicio" class="cabecalho">
+        <img
+          src="images/eu.jpeg"
+          alt="Foto de Daniel Magalhaes"
+          class="foto-perfil"
+        />
+        <h1>Daniel Magalhães</h1>
+        <p>Estudante de Desenvolvimento Web</p>
+      </section>
 
-        <!-- SEÇÃO SOBRE -->
-        <section id="sobre" class="sobre">
-            <div class="container">
-                <h2 class="sobre-titulo">Sobre Mim</h2>
-                <div class="sobre-caixa">
-                    <p class="sobre-paragrafo">
-                        Graduado em Gestão de TI.<br>
-                        +3 anos de experiência em Suporte Técnico (N1/N2) e automação comercial.<br>
-                        Focado em dominar o ecossistema Front-end.<br>
-                        Goiânia - GO.
-                    </p>
+      <!-- SEÇÃO SOBRE -->
+      <section id="sobre" class="sobre">
+        <div class="container">
+          <h2 class="sobre-titulo">Sobre Mim</h2>
+          <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+              Graduado em Gestão de TI.<br />
+              +3 anos de experiência em Suporte Técnico (N1/N2) e automação
+              comercial.<br />
+              Focado em dominar o ecossistema Front-end.<br />
+              Goiânia - GO.
+            </p>
 
-                    <!-- Link isolado e transformado em botão centralizado -->
-                    <div class="github-wrapper">
-                        <a href="https://github.com/Themagalhaes" target="_blank" rel="noopener noreferrer"
-                            class="btn-github-sobre">
-                            Mais informações no meu GitHub <span class="seta-animada">→</span>
-                        </a>
-                    </div>
-
-
-                </div>
+            <!-- Link isolado e transformado em botão centralizado -->
+            <div class="github-wrapper">
+              <a
+                href="https://github.com/Themagalhaes"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-github-sobre"
+              >
+                Mais informações no meu GitHub
+                <span class="seta-animada">→</span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-
-        <!-- SEÇÃO PROJETOS -->
-        <section id="projetos" class="projetos">
-            <div class="container">
-                <h2 class="projetos-titulo">Meus Projetos</h2>
-                <div class="projetos-caixa">
-
-                    <!-- Projeto 1 -->
-                    <div class="projetos-card">
-                        <!-- A imagem continua com a função de ampliar -->
-                        <img src="./images/rede construção.png" alt="Rede da construção" class="projetos-imagem"
-                            onclick="ampliarImagem(this.src)" style="cursor: zoom-in;">
-
-                        <div class="caixa-textos-projetos">
-                            <h3 class="info-projetos">Rede da construção</h3>
-                            <p class="paragrafo-projetos">Projeto de rede elétrica para construção civil.</p>
-                            <p class="paragrafo-projetos">Tecnologias: HTML5 | CSS3 | Responsividade</p>
-
-                            <!-- Novo link estilizado como botão -->
-                            <a href="https://redecontrrucao0205.netlify.app/" target="_blank" rel="noopener noreferrer"
-                                class="btn-visitar-site">
-                                Visitar Site
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Projeto 2 -->
-                    <div class="projetos-card">
-                        <!-- A imagem continua com a função de ampliar -->
-                        <img src="./images/dota 2.png" alt="Dota 2" class="projetos-imagem"
-                            onclick="ampliarImagem(this.src)" style="cursor: zoom-in;">
-
-                        <div class="caixa-textos-projetos">
-                            <h3 class="info-projetos">Dota 2</h3>
-                            <p class="paragrafo-projetos">Jogadores podem verificar qual melhor herói para o jogo.</p>
-                            <p class="paragrafo-projetos">Tecnologias: HTML5 | CSS3 | Responsividade</p>
-
-                            <!-- Novo link estilizado como botão -->
-                            <a href="https://apidota2.netlify.app/" target="_blank" rel="noopener noreferrer"
-                                class="btn-visitar-site">
-                                Visitar Site
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 3 -->
-                    <div class="projetos-card">
-                        <!-- A imagem continua com a função de ampliar -->
-                        <img src="./images/dargra.png" alt="Dargra" class="projetos-imagem"
-                            onclick="ampliarImagem(this.src)" style="cursor: zoom-in;">
-
-                        <div class="caixa-textos-projetos">
-                            <h3 class="info-projetos">Delicias de Dargra</h3>
-                            <p class="paragrafo-projetos">Site para divulgar bolos e doces.</p>
-                            <p class="paragrafo-projetos">Tecnologias: HTML5 | CSS3 | Responsividade</p>
-
-                            <!-- Novo link estilizado como botão -->
-                            <a href="https://deliciasdargra.netlify.app/" target="_blank" rel="noopener noreferrer"
-                                class="btn-visitar-site">
-                                Visitar Site
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <!-- SEÇÃO PROJETOS -->
+      <section id="projetos" class="projetos">
+        <div class="container">
+          <h2 class="projetos-titulo">Meus Projetos</h2>
+          <div class="projetos-caixa">
+            <!-- Projeto 1 -->
+            <div class="projetos-card">
+              <img
+                src="./images/rede construção.png"
+                alt="Rede da construção"
+                class="projetos-imagem"
+                onclick="ampliarImagem(this.src)"
+                style="cursor: zoom-in"
+              />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Rede da construção</h3>
+                <p class="paragrafo-projetos">
+                  Projeto de rede elétrica para construção civil.
+                </p>
+                <p class="paragrafo-projetos">
+                  Tecnologias: HTML5 | CSS3 | Responsividade
+                </p>
+                <a
+                  href="https://netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visitar-site"
+                >
+                  Visitar Site
+                </a>
+              </div>
             </div>
-        </section>
 
-        <!-- SEÇÃO CONTATO -->
-        <section id="contatos" class="contatos">
-            <div class="container">
-                <h2 class="contatos-titulo">Entre em Contato</h2>
-                <form class="formulario-contato" id="formulario">
-                    <div class="grupo-form">
-                        <input type="text" placeholder="Nome" class="campo-form" required>
-                    </div>
-                    <div class="grupo-form">
-                        <textarea class="campo-form" placeholder="Digite a sua mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="botao-form">Enviar WhatsApp</button>
-                </form>
+            <!-- Projeto 2 -->
+            <div class="projetos-card">
+              <img
+                src="./images/dota 2.png"
+                alt="Dota 2"
+                class="projetos-imagem"
+                onclick="ampliarImagem(this.src)"
+                style="cursor: zoom-in"
+              />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Dota 2</h3>
+                <p class="paragrafo-projetos">
+                  Jogadores podem verificar qual melhor herói para o jogo.
+                </p>
+                <p class="paragrafo-projetos">
+                  Tecnologias: HTML5 | CSS3 | Responsividade
+                </p>
+                <a
+                  href="https://netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visitar-site"
+                >
+                  Visitar Site
+                </a>
+              </div>
             </div>
-        </section>
+
+            <!-- Projeto 3 -->
+            <div class="projetos-card">
+              <img
+                src="./images/dargra.png"
+                alt="Dargra"
+                class="projetos-imagem"
+                onclick="ampliarImagem(this.src)"
+                style="cursor: zoom-in"
+              />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Delicias de Dargra</h3>
+                <p class="paragrafo-projetos">
+                  Site para divulgar bolos e doces.
+                </p>
+                <p class="paragrafo-projetos">
+                  Tecnologias: HTML5 | CSS3 | Responsividade
+                </p>
+                <a
+                  href="https://netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visitar-site"
+                >
+                  Visitar Site
+                </a>
+              </div>
+            </div>
+            <!-- Fechamento correto do Projeto 3 -->
+
+            <!-- Projeto 4 -->
+            <div class="projetos-card">
+              <img
+                src="./images/dgt.png"
+                alt="DGT Acessoria Esportiva"
+                class="projetos-imagem"
+                onclick="ampliarImagem(this.src)"
+                style="cursor: zoom-in"
+              />
+              <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">DGT Acessoria Esportiva</h3>
+                <p class="paragrafo-projetos">Site de acessoria esportiva.</p>
+                <p class="paragrafo-projetos">
+                  Tecnologias: HTML5 | CSS3 | Responsividade
+                </p>
+                <a
+                  href="https://dgt-acessoria-esportiva.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visitar-site"
+                >
+                  Visitar Site
+                </a>
+              </div>
+            </div>
+            <!-- Fechamento do Projeto 4 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO CONTATO -->
+      <section id="contatos" class="contatos">
+        <div class="container">
+          <h2 class="contatos-titulo">Entre em Contato</h2>
+          <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+              <input
+                type="text"
+                placeholder="Nome"
+                class="campo-form"
+                required
+              />
+            </div>
+            <div class="grupo-form">
+              <textarea
+                class="campo-form"
+                placeholder="Digite a sua mensagem"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
-        <div class="container">
-            <div class="email">
-                <p>Email: <a href="mailto:magalhaes_exe@hotmail.com">magalhaes_exe@hotmail.com</a></p>
-            </div>
-            <p class="copyright">&copy; 2026 - Daniel Magalhães</p>
+      <div class="container">
+        <div class="email">
+          <p>
+            Email:
+            <a href="mailto:magalhaes_exe@hotmail.com"
+              >magalhaes_exe@hotmail.com</a
+            >
+          </p>
         </div>
+        <p class="copyright">&copy; 2026 - Daniel Magalhães</p>
+      </div>
     </footer>
 
     <!-- LIGHTBOX (Janela de imagem ampliada) -->
-    <div id="lightbox" class="lightbox" onclick="fecharImagem()"
-        style="display: none; position: fixed; z-index: 999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-        <span class="fechar"
-            style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer;">&times;</span>
-        <img id="img-ampliada" src="" alt="Imagem Ampliada" style="max-width: 90%; max-height: 80%;">
+    <div
+      id="lightbox"
+      class="lightbox"
+      onclick="fecharImagem()"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <span
+        class="fechar"
+        style="
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          color: white;
+          font-size: 40px;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        id="img-ampliada"
+        src=""
+        alt="Imagem Ampliada"
+        style="max-width: 90%; max-height: 80%"
+      />
     </div>
 
     <!-- SCRIPT DO LIGHTBOX -->
-
-</body>
-
+  </body>
 </html>
